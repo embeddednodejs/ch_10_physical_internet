@@ -38,7 +38,6 @@ var Ble = function(acceptedDevices) {
 
   this.scan = function() {
     console.log('Scanning...');
-    console.log(powered);
 
     if (powered) {
         noble.startScanning([], true);
@@ -78,10 +77,8 @@ var Ble = function(acceptedDevices) {
        console.log('Unauthorized device discovered.', deviceID);
      }
   
-     if (localName == "Duo-K62G") {
-       // showDevice();
-       console.log("detected");
-     }
+     // show other device information
+     // showDevice(p);
   }
   _.bindAll(this, 'startScanning', 'poll', 'scan', '_processDiscovery');
 
