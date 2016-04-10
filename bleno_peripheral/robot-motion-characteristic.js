@@ -1,14 +1,13 @@
 var util = require('util');
 
-// var bleno = require('bleno');
-var bleno = function() {}
+var bleno = require('bleno');
 
 var BlenoCharacteristic = bleno.Characteristic;
 var BlenoDescriptor = bleno.Descriptor;
 
 function RobotMotionCharacteristic(robot) {
   RobotMotionCharacteristic.super_.call(this, {
-    uuid: '01010101010101010101010101524742',
+    uuid: '34563456345634563456345634563456',
     properties: ['write', 'writeWithoutResponse'],
     descriptors: [
       new BlenoDescriptor({

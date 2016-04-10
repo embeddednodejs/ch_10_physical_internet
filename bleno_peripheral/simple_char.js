@@ -1,5 +1,4 @@
-// var bleno = require('bleno');
-var bleno = function() {}
+var bleno = require('bleno');
 
 var RobotService = require('./robotService');
 

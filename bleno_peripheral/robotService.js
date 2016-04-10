@@ -1,7 +1,6 @@
 var util = require('util');
 
-// var bleno = require('bleno');
-var bleno = function() {}
+var bleno = require('bleno');
 var BlenoPrimaryService = bleno.PrimaryService;
 
 var RobotMotionCharacteristic = require('./robot-motion-characteristic');
