@@ -4,8 +4,10 @@
   "description": "",
   "main": "robot-motion-characteristic.js",
   "dependencies": {
+    "async": "^1.5.2",
+    "bleno": "*",
     "noble": "^1.3.0",
-    "bleno": "*"
+    "noble-device": "^1.3.0"
   },
   "devDependencies": {},
   "scripts": {
